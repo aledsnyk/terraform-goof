@@ -1,12 +1,10 @@
 variable "region" {
-  type    = string
-  default = "us-west-1"
+  type = string
 }
 
 variable "ami" {
   type        = string
   description = "ami used for ec2 instance. example - ami-07336266b2c69c546 (terraform-goof-example-ami)"
-  default     = "ami-07336266b2c69c546"
 }
 
 variable "access_key" {
