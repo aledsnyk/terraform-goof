@@ -9,9 +9,9 @@ variable "cidr_secondary" {
 }
 
 variable "vpc_id" {
-  type    = string
+  type = string
 }
 
 variable "region" {
-  type    = string
+  type = string
 }
