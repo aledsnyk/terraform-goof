@@ -46,7 +46,7 @@ resource "aws_db_instance" "snyk_db" {
   name                      = "snyk_db_${var.environment}"
   allocated_storage         = 20
   engine                    = "postgres"
-  engine_version            = "10.20"
+  engine_version            = "16.1"
   instance_class            = "db.t3.micro"
   storage_type              = "gp2"
   password                  = var.db_password
