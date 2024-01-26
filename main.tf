@@ -64,6 +64,7 @@ module "iam" {
 
 module "instance" {
   source        = "terraform-aws-modules/ec2-instance/aws"
+  version       = "~> 3.0"
   ami           = var.ami
   instance_type = "t2.micro"
   name          = "example-server"
