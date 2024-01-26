@@ -1,11 +1,11 @@
 terraform {
-  cloud {
-    organization = "partner-snyk"
+  # cloud {
+  #   organization = "partner-snyk"
 
-    workspaces {
-      name = "terraform-goof-CLI"
-    }
-  }
+  #   workspaces {
+  #     name = "terraform-goof-CLI"
+  #   }
+  # }
 
   required_providers {
     aws = {
@@ -13,6 +13,8 @@ terraform {
       version = "~> 3.0"
     }
   }
+
+  required_version = ">= 1.1"
 }
 
 provider "aws" {
