@@ -10,3 +10,6 @@ secret.auto.tfvars
 // Ignore the .dccache file for Snyk Code Analysis
 .dccache
 .envrc
+terraform.tfstate
+terraform.tfstate.backup
+tfout.plan
